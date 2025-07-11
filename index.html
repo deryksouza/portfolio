@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sou um Desenvolvedor Front-End e este é meu portfólio. Espero que goste!">
+    <meta name="keywords" content="Front-End, Web Developer, HTML, CSS, JavaScript, Sass, React, Bootstrap, Jquery, GIT, Responsive Design">
+    <meta name="author" content="Kelleyson Deryk">
+    <title>Kelleyson Deryk | Portfólio Desenvolvedor Full Stack</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <aside>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <span class="icon"><i class="fas fa-home" role="img" aria-label="Home"></i></span>
+                            <span class="title">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span class="icon"><i class="fas fa-user" role="img" aria-label="About"></i></span>
+                            <span class="title">Sobre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <span class="icon"><i class="fas fa-tools" role="img" aria-label="Skills"></i></span>
+                            <span class="title">Habilidades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="icon"><i class="fas fa-file-code" role="img" aria-label="Projects"></i></span>
+                            <span class="title">Projetos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="icon"><i class="fas fa-at" role="img" aria-label="Contact"></i></span>
+                            <span class="title">Contato</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button class="fancy-burger" onclick="toggleMenu()" aria-label="Menu">
+                <span class="rectangle rectangle--top rectangle--small"></span>
+                <span class="rectangle rectangle--middle"></span>
+                <span class="rectangle rectangle--bottom rectangle--small"></span>
+            </button>
+        </aside>
+    
+        <header id="home">
+            <div class="logo">
+                <i id="code-logo" class="fas fa-code" role="img" aria-label="Code"></i>
+                <p>Kelleyson Deryk</p>
+            </div>
+            <div class="banner">
+                <h1 onclick="spin()" title="Clique aqui">
+                    Full Stack<br>Developer
+                </h1>
+            </div>
+            <span class="pattern"></span>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="about">
+                    <h2>Olá <i class="fas fa-comment fa-1x" role="img" aria-label="Chat"></i></h2>
+                    <p>Olá! Sou Kelleyson, desenvolvedor e profissional de TI com formação em Análise e Desenvolvimento de Sistemas. Tenho experiência prática em suporte técnico, integração de sistemas e desenvolvimento web — sempre com foco em performance, segurança e usabilidade. Minha especialidade está em lidar com sistemas críticos e transformar dados em decisões estratégicas. Estou sempre em busca de novos desafios para criar soluções inteligentes e eficientes.</p>
+                    <div class="social-medias">
+                        <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fab fa-github-square" role="img" aria-label="GitHub" title="GITHUB"></i></a>
+                        <a href="mailto:kelleysonderyk@gmail.com" target="_blank" rel="noopener" id="resume-btn" aria-label="Resume" title="CONTATO">Contato</a>
+                    </div>
+                </div> 
+            </section>
+
+            <section id="skills">
+                <div class="skills">
+                    <h2>Habilidades <i class="fas fa-laptop-code fa-1x" role="img" aria-label="Laptop"></i></h2>
+                    <div class="skills-container">
+                        <div class="icons-container">
+                            <i class="fab fa-html5" style="font-size: 72px; color: #e34c26;"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-css3-alt" style="font-size: 72px; color: #1572b6;"></i>
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-js-square" style="font-size: 72px; color: #f7df1e;"></i>
+                            <h3>JAVASCRIPT</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-php" style="font-size: 72px; color: #777bb4;"></i>
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-angular" style="font-size: 72px; color: #dd0031;"></i>
+                            <h3>ANGULAR</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fas fa-database" style="font-size: 72px; color: #336791;"></i>
+                            <h3>POSTGRESQL</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-react" style="font-size: 72px; color: #61dafb;"></i>
+                            <h3>REACT</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-git-alt" style="font-size: 72px; color: #f05032;"></i>
+                            <h3>GIT</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-aws" style="font-size: 72px; color: #ff9900;"></i>
+                            <h3>AWS</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-python" style="font-size: 72px; color: #3776ab;"></i>
+                            <h3>PYTHON</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fab fa-node-js" style="font-size: 72px; color: #339933;"></i>
+                            <h3>NODE.JS</h3>
+                        </div>
+                        <div class="icons-container">
+                            <i class="fas fa-mobile-alt" style="font-size: 72px; color: #333;"></i>
+                            <h3>RESPONSIVE DESIGN</h3>
+                        </div>      
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="projects">
+                    <span class="pattern2"></span>
+
+                    <h2>PROJETOS <i class="fas fa-folder-open fa-1x" role="img" aria-label="Folder"></i></h2>
+
+                    <div class="projects-wrapper">
+                        <div class="mySlides fade" style="display: flex;">
+                            <div class="project-image" style="background-image: url('./assets/odonto-system.gif'); background-size: cover; background-position: center;"></div>
+                            <div class="text">
+                                <h3><a href="#" target="_blank" rel="noopener">Sistema Odontológico Completo</a></h3>
+                                <div class="projects-description">
+                                    <p><i class="fas fa-info-circle" role="img" aria-label="info"></i> Sistema completo para clínicas odontológicas com cadastro de pacientes, agendamento, financeiro, odontograma e anamnese. Multi-usuário com diferentes níveis de acesso para administradores e dentistas.</p>
+                                    <h4><i class="fas fa-tools" role="img" aria-label="technologies"></i> React, TypeScript, Material-UI, Node.js, Express, PostgreSQL, JWT</h4>
+                                </div>
+                                <div class="links">
+                                    <a href="#" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Ver Demo</a>
+                                    <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade" style="display: none;">
+                            <div class="project-image" style="background-image: url('./assets/panic-button.gif'); background-size: cover; background-position: center;"></div>
+                            <div class="text">
+                                <h3><a href="#" target="_blank" rel="noopener">Botão do Pânico</a></h3>
+                                <div class="projects-description">
+                                    <p><i class="fas fa-info-circle" role="img" aria-label="info"></i> Sistema de emergência em tempo real que captura localização GPS e envia alertas instantâneos para central de monitoramento. Interface responsiva com mapa interativo para visualização de ocorrências.</p>
+                                    <h4><i class="fas fa-tools" role="img" aria-label="technologies"></i> React.js, Node.js, Socket.IO, Material-UI, React-Leaflet, OpenStreetMap</h4>
+                                </div>
+                                <div class="links">
+                                    <a href="#" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Ver Demo</a>
+                                    <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade" style="display: none;">
+                            <div class="project-image" style="background-image: url('./assets/youhome.gif'); background-size: cover; background-position: center;"></div>
+                            <div class="text">
+                                <h3><a href="#" target="_blank" rel="noopener">YouHome - Arquitetura</a></h3>
+                                <div class="projects-description">
+                                    <p><i class="fas fa-info-circle" role="img" aria-label="info"></i> Website responsivo para empresa de arquitetura desenvolvido com Bootstrap 5. Design moderno com slider interativo, galeria de portfólio e abordagem mobile-first.</p>
+                                    <h4><i class="fas fa-tools" role="img" aria-label="technologies"></i> HTML5, CSS3, Bootstrap 5, Bootstrap Icons, Google Fonts</h4>
+                                </div>
+                                <div class="links">
+                                    <a href="#" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Ver Site</a>
+                                    <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade" style="display: none;">
+                            <div class="project-image" style="background-image: url('./assets/ponto-system.gif'); background-size: cover; background-position: center;"></div>
+                            <div class="text">
+                                <h3><a href="#" target="_blank" rel="noopener">Sistema de Ponto Eletrônico</a></h3>
+                                <div class="projects-description">
+                                    <p><i class="fas fa-info-circle" role="img" aria-label="info"></i> Sistema web completo para controle de ponto de funcionários com autenticação segura, dashboard em tempo real e registro completo de jornada de trabalho (entrada, intervalo, saída).</p>
+                                    <h4><i class="fas fa-tools" role="img" aria-label="technologies"></i> PHP 7+, MySQL, JavaScript, HTML5, CSS3, PDO, Apache</h4>
+                                </div>
+                                <div class="links">
+                                    <a href="#" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Ver Demo</a>
+                                    <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" role="img" aria-label="link"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+
+                    <div class="slide-control">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact">
+                    <h2>Contato <i class="fas fa-arrow-circle-down fa-1x" role="img" aria-label="Contact"></i></h2>
+                    <form action="#" method="POST">
+                        <span>
+                            <input type="text" name="name" id="name" placeholder="Seu nome..." required>
+                            <input type="email" name="email" id="email" placeholder="Seu email..." required>
+                        </span>
+                        <input type="text" name="subject" id="subject" placeholder="Assunto..." required>
+                        <textarea name="message" id="message" rows="4" placeholder="Sua mensagem..." required></textarea>
+                        <button type="submit">Enviar <i class="fas fa-paper-plane" role="img" aria-label="Submit"></i></button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="social-medias">
+                    <a href="https://github.com/deryksouza" target="_blank" rel="noopener"><i class="fab fa-github-square" role="img" aria-label="GitHub" title="GITHUB"></i></a>
+                    <a href="mailto:kelleysonderyk@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope-square" role="img" aria-label="Email" title="EMAIL"></i></a>
+                </div>
+                <p>©2025 Kelleyson Deryk de Souza Melo</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
